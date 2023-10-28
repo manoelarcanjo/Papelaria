@@ -1,0 +1,46 @@
+header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding: 2rem;
+    background-color: $primary-gray;
+}
+
+header h1 {
+    padding: 1rem;
+}
+
+header img {
+    width: 5rem;
+}
+
+.headerNav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.headerNav {
+    color: $primary-black;
+    font-size: 1.1rem;
+}
+
+.headerNav:hover {
+    a {
+        animation: translateY 0.8s infinite alternate;
+        color: $primary-red;
+    }
+}
+
+@keyframes translateY {
+    from{
+        transform: translateY(0) scale(1);
+    }
+
+    to{
+        transform: translateY(-8px) scale(1.1);
+    }
+}
